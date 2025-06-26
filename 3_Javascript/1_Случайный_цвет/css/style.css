@@ -34,9 +34,8 @@
 
 .square {
     background-color: rgb(202, 228, 236);
-    border-radius: 5%;
+    border-radius: 5px;
     height: 100px;
     width: 100px;
     border: 1px black solid;
-
 }

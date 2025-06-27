@@ -1,3 +1,64 @@
+ymaps.ready(init);
+var myMap;
+let isAdressSelected = false;
+
+function init () {
+    myMap = new ymaps.Map("map", {
+        center: [54.1938, 37.6171], // Тула
+        zoom: 11
+    }, {
+        balloonMaxWidth: 200,
+        searchControlProvider: 'yandex#search'
+        
+    });
+
+    myMap.events.add('click', function (e) {
+        if (!myMap.balloon.isOpen()) {
+            var coords = e.get('coords');
+            myMap.balloon.open(coords, {
+                contentHeader:'Адрес доставки выбран!',
+                contentBody:'<p>Ваш заказ придет по следующим координатам:</p>' +
+                    '<p>Координаты: ' + [
+                    coords[0].toPrecision(6),
+                    coords[1].toPrecision(6)
+                    ].join(', ') + '</p>',
+                contentFooter:'<sup>Для смены адреса щёлкните еще раз</sup>'
+            });
+        }
+        else {
+            myMap.balloon.close();
+        }
+        
+    });
+
+    myMap.events.add('contextmenu', function (e) {
+        if (!myMap.balloon.isOpen()) {
+            var coords = e.get('coords');
+            myMap.balloon.open(coords, {
+                contentHeader:'Адрес доставки выбран!',
+                contentBody:'<p>Ваш заказ придет по следующим координатам:</p>' +
+                    '<p>Координаты: ' + [
+                    coords[0].toPrecision(6),
+                    coords[1].toPrecision(6)
+                    ].join(', ') + '</p>',
+                contentFooter:'<sup>Для смены адреса щёлкните еще раз</sup>'
+            });
+        }
+        else {
+            myMap.balloon.close();
+        }
+    });
+    
+    myMap.events.add('balloonopen', function (e) {
+        myMap.hint.close();
+        isAdressSelected = true;
+    });
+
+    myMap.events.add('balloonclose', function(e) {
+        isAdressSelected = false;
+    });
+}
+
 const telField = document.getElementById("tel-field");
 const mainForm = document.getElementById("main-form");
 
@@ -21,6 +82,9 @@ checkValidity = () => {
     if (emailField.value.trim() === '') {
         return document.getElementById("fail-text-email");
     }
+    if (!isAdressSelected) {
+        return document.getElementById("fail-text-adress");
+    } 
 }
 
 formSubmitEvent = () => {

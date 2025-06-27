@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>Оформление заказа</title>
 </head>
@@ -15,6 +16,7 @@
             <input type="text" placeholder="ФИО" id="fio-field" class="main-form__input-field" >
             <input type="tel" placeholder="Телефон" id="tel-field" class="main-form__input-field" >
             <input type="email" placeholder="Email" id="email-field" class="main-form__input-field">
+            <div id="map" class="main-form__input-field" style="height: 300px"></div>
             <textarea maxlength="500" placeholder="Комментарий к заказу (макс. 500 символов)" id="comment-field" class="main-form__input-field"></textarea>
             <button class="main-form__button" id="main-form__button">
                 Отправить
@@ -24,7 +26,7 @@
             <p class="visually-hidden fail-text" id="fail-text-fio">Не заполнено поле ФИО</p>
             <p class="visually-hidden fail-text" id="fail-text-tel">Не заполнено поле номера телефона</p>
             <p class="visually-hidden fail-text" id="fail-text-email">Не заполнено поле email</p>
-            <p class="visually-hidden fail-text" id="fail-text-adress">Не отмечен адрес дооставки</p>
+            <p class="visually-hidden fail-text" id="fail-text-adress">Не отмечен адрес доставки</p>
         </form>
     </div>
     <script src="./js/script.js"></script></script>

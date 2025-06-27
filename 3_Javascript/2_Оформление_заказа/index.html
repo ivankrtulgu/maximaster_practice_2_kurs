@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Оформление заказа</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" id="main-form" class="main-form" onsubmit="event.preventDefault(); formSubmitEvent();">
+            <input type="text" placeholder="ФИО" id="fio-field" class="main-form__input-field" required>
+            <input type="tel" placeholder="Телефон" id="tel-field" class="main-form__input-field" required>
+            <input type="email" placeholder="Email" id="email-field" class="main-form__input-field"required>
+            <textarea maxlength="500" placeholder="Комментарий к заказу (макс. 500 символов)" id="comment-field" class="main-form__input-field"></textarea>
+            <button class="main-form__button" id="main-form__button">
+                Отправить
+            </button>
+        </form>
+    </div>
+    <script src="./js/script.js"></script></script>
+</body>
+</html>

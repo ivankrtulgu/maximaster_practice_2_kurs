@@ -1,0 +1,15 @@
+.main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-form__input-field {
+    margin-bottom: 15px;
+    width: 300px;
+}
+
+#comment-field {
+    height: 150px;
+    resize: none;
+}

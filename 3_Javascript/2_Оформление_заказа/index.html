@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +9,22 @@
 <body>
     <div class="wrapper">
         <form action="" id="main-form" class="main-form" onsubmit="event.preventDefault(); formSubmitEvent();">
-            <input type="text" placeholder="ФИО" id="fio-field" class="main-form__input-field" required>
-            <input type="tel" placeholder="Телефон" id="tel-field" class="main-form__input-field" required>
-            <input type="email" placeholder="Email" id="email-field" class="main-form__input-field"required>
+            <!-- <input type="text" placeholder="ФИО" id="fio-field" class="main-form__input-field" required> -->
+            <!-- <input type="tel" placeholder="Телефон" id="tel-field" class="main-form__input-field" required> -->
+            <!-- <input type="email" placeholder="Email" id="email-field" class="main-form__input-field"required> -->
+            <input type="text" placeholder="ФИО" id="fio-field" class="main-form__input-field" >
+            <input type="tel" placeholder="Телефон" id="tel-field" class="main-form__input-field" >
+            <input type="email" placeholder="Email" id="email-field" class="main-form__input-field">
             <textarea maxlength="500" placeholder="Комментарий к заказу (макс. 500 символов)" id="comment-field" class="main-form__input-field"></textarea>
             <button class="main-form__button" id="main-form__button">
                 Отправить
             </button>
+            <p class="visually-hidden success-text" id="success-text">Заказ оформлен!</p>
+            <p class="visually-hidden fail-text" id="fail-text">Заказ НЕ оформлен!</p>
+            <p class="visually-hidden fail-text" id="fail-text-fio">Не заполнено поле ФИО</p>
+            <p class="visually-hidden fail-text" id="fail-text-tel">Не заполнено поле номера телефона</p>
+            <p class="visually-hidden fail-text" id="fail-text-email">Не заполнено поле email</p>
+            <p class="visually-hidden fail-text" id="fail-text-adress">Не отмечен адрес дооставки</p>
         </form>
     </div>
     <script src="./js/script.js"></script></script>

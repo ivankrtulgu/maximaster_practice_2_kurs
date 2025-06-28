@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./css/style.css" />
     <title>Таблица товаров</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <form action="" class="header-form">
+            <p class="header-form__text">
+                Цена от:
+            </p>
+            <input type="number" id="header-form__input-min" placeholder="0" class="header-form__input">
+            <p class="header-form__text">
+                до:
+            </p>
+            <input type="number" id="header-form__input-max" placeholder="10000" class="header-form__input">
+            <button class="header-form__button" type="button">
+                Обновить
+            </button>
+        </form>
+        <table class="main-table">
+            <thead class="main-table__head">
+                <tr class="main-table__head-row">
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Название
+                    </th>
+                    <th>
+                        Количество
+                    </th>
+                    <th>
+                        Цена за единицу
+                    </th>
+                    <th>
+                        Сумма
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="main-table__body">
+                <tr class="main-table__body-row">
+                    <td>
+                        0
+                    </td>
+                    <td>
+                        test
+                    </td>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        20
+                    </td>
+                    <td>
+                        200
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="nodata-text visually-hidden">
+            Нет данных, попадающих под условие фильтра
+        </p>
+    </div>
+     <script src="./js/script.js"></script>
 </body>
 </html>

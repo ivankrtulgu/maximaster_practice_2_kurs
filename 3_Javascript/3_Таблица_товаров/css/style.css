@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    min-width: 600px;
 }
 
 .header-form__text {
@@ -44,4 +45,9 @@ td {
 
 .main-table__head {
     background-color: lightgray;
+}
+
+.nodata-text {
+    color: red;
+    text-align: center;
 }

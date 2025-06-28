@@ -12,12 +12,12 @@
             <p class="header-form__text">
                 Цена от:
             </p>
-            <input type="number" id="header-form__input-min" placeholder="0" class="header-form__input">
+            <input min="0" type="number" id="header-form__input-min" placeholder="0" class="header-form__input">
             <p class="header-form__text">
                 до:
             </p>
-            <input type="number" id="header-form__input-max" placeholder="10000" class="header-form__input">
-            <button class="header-form__button" type="button">
+            <input min="0" type="number" id="header-form__input-max" placeholder="100000" class="header-form__input">
+            <button class="header-form__button" id="header-form__button" type="button">
                 Обновить
             </button>
         </form>
@@ -42,7 +42,7 @@
                 </tr>
             </thead>
             <tbody class="main-table__body">
-                <tr class="main-table__body-row">
+                <!-- <tr class="main-table__body-row">
                     <td>
                         0
                     </td>
@@ -58,7 +58,7 @@
                     <td>
                         200
                     </td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
         <p class="nodata-text visually-hidden">

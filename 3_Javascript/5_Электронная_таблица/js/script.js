@@ -1,5 +1,51 @@
-numRows = 3;
-numCols = 3;
+if (localStorage.getItem("numRows")){
+    numRows = localStorage.getItem("numRows");
+}
+else{
+    numRows = 3;
+}
+
+if (localStorage.getItem("numCols")){
+    numCols = localStorage.getItem("numCols");
+}
+else{
+    numCols = 3;
+}
+
+const createTable = () => {
+    const mainTableBody = document.querySelector('.main-table-body');
+    for (let i = 0; i < numRows; i++) {
+        const rw = document.createElement('tr');
+        mainTableBody.append(rw);
+    }
+    for (let i of mainTableBody.children) {
+        for (let j = 0; j < numCols; j++){
+            let el_td = document.createElement('td');
+            let el_input = document.createElement('input');
+            el_input.classList.add('inputField')
+            el_input.classList.add('visually-hidden')
+            el_td.append(el_input);
+            i.append(el_td);
+        }
+    }
+
+    let numOfRow = 0;
+    for(let i of mainTableBody.children) {
+        let numOfCol = 0;
+        for(let j of i.children) {
+            if (localStorage[[numOfCol,numOfRow]]){
+                j.firstElementChild.value = localStorage[[numOfCol,numOfRow]];
+            }
+            numOfCol++
+        }
+        numOfRow++
+    }
+}
+
+createTable();
+
+console.log(numRows);
+console.log(numCols);
 
 const addRow = () => {
     let rw = document.createElement('tr')
@@ -79,3 +125,18 @@ document.getElementById('row-buttons__add-row').addEventListener('click', addRow
 document.getElementById('row-buttons__remove-row').addEventListener('click', removeRow);
 document.getElementById('column-buttons__add-column').addEventListener('click', addCol);
 document.getElementById('column-buttons__remove-column').addEventListener('click', removeCol);
+
+window.addEventListener("unload", function() {
+    const mainTableBody = document.querySelector('.main-table-body');
+    let numOfRow = 0;
+    for(let i of mainTableBody.children) {
+        let numOfCol = 0;
+        for(let j of i.children) {
+            localStorage[[numOfCol,numOfRow]] = j.firstElementChild.value;
+            numOfCol++
+        }
+        numOfRow++
+    }
+    localStorage["numRows"] = numRows;   
+    localStorage["numCols"] = numCols; 
+});

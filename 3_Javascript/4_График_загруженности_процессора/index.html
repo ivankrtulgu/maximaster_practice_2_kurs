@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="./css/style.css" />
-
-    <title>Document</title>
+    <title>График загруженности процессора</title>
 </head>
 <body>
-     <script src="./js/script.js"></script>
-    
+    <div class="wrapper">
+        <p class="info" id="info"></p>
+        <div id="mainChartWrapper">
+            <canvas id="mainChart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

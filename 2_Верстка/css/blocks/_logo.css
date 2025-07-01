@@ -1,0 +1,30 @@
+.logo{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    width: 46px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.logo:focus{
+    outline: none;
+}
+
+.logo:focus-visible{
+    outline: var(--outline);
+    outline-offset: calc(var(--outline-offset));
+}
+
+@media (any-hover: hover){
+    .logo:hover{
+        background-color: var(--dark-primary)
+    }
+
+}
+
+.logo:active{
+    background-color: var(--primary);
+}

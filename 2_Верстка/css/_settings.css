@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+.page{
+    line-height: 1.6;
+}
+
+.page__body{
+    min-width: 460px; 
+    font-family: var(--font-family);
+}
+
+.container{
+    padding: 0 var(--container-offset);
+    margin: 0 auto;
+    max-width: calc(var(--container-width) + (var(--container-offset) * 2));
+}
+
+.list-reset{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.button-reset{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }

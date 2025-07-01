@@ -1,0 +1,27 @@
+:root{
+    --primary: #606060;
+    --dark-primary: #303030;
+
+    --grey: #BBBBBB;
+    /* --dark-grey: #606060; */
+
+    --button-grey: #e4e4e4;
+    --border-button-grey: #959595;
+
+    --white: #fff;
+    --black: #000;
+
+    --orange: #F68236;
+    --border-orange: #E67429;
+
+    --font-family: "Lato", sans-serif;
+    --second-family: Georgia, sans-serif;
+
+    --gap: 50px;
+    --container-width: 1180px;
+    --container-offset: 0px;
+    --main-transition: color 0.5s ease, border-color 0.5s ease, background-color 0.5s ease; 
+
+    --outline: 2px dotted currentColor;
+    --outline-offset: 3px;
+}

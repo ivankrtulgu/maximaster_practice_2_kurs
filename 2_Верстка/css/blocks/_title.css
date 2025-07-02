@@ -1,0 +1,49 @@
+
+.title--headline-one{
+    font-family: var(--font-family);
+    color: var(--dark-primary);
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.subtitle--headline-one {
+    font-family: var(--second-family);
+    font-style: italic;
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin: 0;
+}
+
+.title--headline-two{
+    font-family: var(--font-family);
+    color: var(--dark-primary);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+.subtitle--headline-two {
+    font-family: var(--second-family);
+    font-style: italic;
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.9px;
+    text-align: center;
+    margin: 0;
+}

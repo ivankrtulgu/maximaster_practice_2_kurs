@@ -6,6 +6,7 @@
     /* --dark-grey: #606060; */
 
     --button-grey: #e4e4e4;
+    --button-light-grey: #F7F8F7;
     --border-button-grey: #959595;
 
     --white: #fff;
@@ -24,4 +25,6 @@
 
     --outline: 2px dotted currentColor;
     --outline-offset: 3px;
+    
+    --page-body-padding: 36px;
 }

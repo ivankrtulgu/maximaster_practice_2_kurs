@@ -1,0 +1,26 @@
+.hero{
+    padding-top: 138px;
+    padding-bottom: 150px;
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__title {
+    margin: 0;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.hero__subtitle {
+    margin: 0;
+    margin-bottom: 68px;
+    text-align: center;
+}
+
+/* .hero__button {
+
+} */

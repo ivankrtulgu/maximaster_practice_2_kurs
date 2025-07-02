@@ -1,0 +1,45 @@
+.sing-up-short-form {
+    padding-top: 140px;
+    padding-bottom: 132px;
+}
+
+.sing-up-short-form__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sing-up-short-form__title {
+    margin-bottom: 12px;
+}
+
+.sing-up-short-form__subtitle {
+    margin-bottom: 56px;
+}
+
+.sing-up-short-form__input {
+    display: flex;
+}
+
+.sing-up-short-form__input-field {
+    color: var(--dark-primary);
+    border: 1px solid var(--border-button-grey);
+    background-color: var(--button-light-grey);
+    padding: 0 14px;
+    width: 475px;
+    height: 56px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 14px;
+    font-style: italic;
+}
+
+.sing-up-short-form__input-field:focus {
+    outline: none;
+}
+
+.sing-up-short-form__button {
+    width: 95px;
+    height: 56px;
+}

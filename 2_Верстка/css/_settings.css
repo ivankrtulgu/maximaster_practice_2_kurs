@@ -2,10 +2,22 @@
 *::after,
 *::before{
     box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
 }
 
 .page{
-    line-height: 1.6;
+    /* line-height: 1.6; */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.page::-webkit-scrollbar {
+    display: none;  
 }
 
 .page__body{
@@ -44,4 +56,4 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}

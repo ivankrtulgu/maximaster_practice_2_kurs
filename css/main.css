@@ -904,7 +904,7 @@
     display: inline-block;
     width: 28px;
     height: 12px;
-    background-image: url('../../icons/LeftArrow.svg');
+    background-image: url('./icons/LeftArrow.svg');
     margin-bottom: 14px;
 }
 
@@ -917,7 +917,7 @@
 }
 
 .gallery__image--bg-1 {
-    background-image: url('../../images/e199ba639ef13f86fe1377eeca51a811ffdcf45d.jpg');    
+    background-image: url('./images/e199ba639ef13f86fe1377eeca51a811ffdcf45d.jpg');    
     background-size: cover;
     background-position: center;
 }
@@ -925,31 +925,31 @@
 .gallery__image--bg-2 {
     background-size: cover;
     background-position: center;
-    background-image: url('../../images/Sf8649c1d4e7c45a28cddd2c28befd378P.jpg');
+    background-image: url('./images/Sf8649c1d4e7c45a28cddd2c28befd378P.jpg');
 }
 
 .gallery__image--bg-3 {
     background-size: cover;
     background-position: center;
-    background-image: url('../../images/Converse_Chuck_Taylor.jpg');
+    background-image: url('./images/Converse_Chuck_Taylor.jpg');
 }
 
 .gallery__image--bg-4 {
     background-size: cover;
     background-position: center;
-    background-image: url('../../images/Arcteryx Palisade Pant.jpg');
+    background-image: url('./images/Arcteryx Palisade Pant.jpg');
 }
 
 .gallery__image--bg-5 {
     background-size: cover;
     background-position: center;
-    background-image: url('../../images/800150.jpg');
+    background-image: url('./images/800150.jpg');
 }
 
 .gallery__image--bg-6 {
     background-size: cover;
     background-position: center;
-    background-image: url('../../images/Zara Jackets & Coats _ Zara Black Straight Cut Blazer _ Color_ Black _ Size_ Various.jpg');
+    background-image: url('./images/Zara Jackets & Coats _ Zara Black Straight Cut Blazer _ Color_ Black _ Size_ Various.jpg');
 }
 
 .gallery__title-image {
@@ -1115,7 +1115,7 @@
 .slider__button--prev {
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url(../../icons/Arrow_Thin_Prev.svg);
+    background-image: url(./icons/Arrow_Thin_Prev.svg);
     position: absolute;
 }
 
@@ -1126,7 +1126,7 @@
 .slider__button--next {
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url(../../icons/Arrow_Thin_Next.svg);
+    background-image: url(./icons/Arrow_Thin_Next.svg);
     position: absolute;
     right: -0px;
 }

@@ -904,7 +904,7 @@
     display: inline-block;
     width: 28px;
     height: 12px;
-    background-image: url('./icons/LeftArrow.svg');
+    background-image: url('../icons/LeftArrow.svg');
     margin-bottom: 14px;
 }
 

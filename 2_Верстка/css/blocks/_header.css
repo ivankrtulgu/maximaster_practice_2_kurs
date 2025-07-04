@@ -27,6 +27,10 @@
     /* align-items: center; */
 }
 
+.header__item--visually-hidden {
+    display: none;
+}
+
 /* .header__item{
     align-items: center; 
 } */
@@ -94,8 +98,11 @@
     justify-content: center;
     align-items: center;
     border: 1px solid var(--border-button-grey);
-    padding: 14px;  
+    /* padding: 14px;   */
+    /* padding: auto;   */
     transition: var(--main-transition);
+    width: 46px;
+    height: 46px;
 }
 
 /* .header__button:hover{
@@ -126,6 +133,10 @@
 
 .header__button:active{
     background-color: var(--dark-primary);
+}
+
+.header__button--visually-hidden {
+    display: none;
 }
 
 

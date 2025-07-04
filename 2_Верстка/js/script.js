@@ -34,3 +34,10 @@ document.getElementById('sliderButtonNext').addEventListener('click', () => {
         });
     }
 })
+
+// Burger menu
+
+document.getElementById('headerBurgerMenuButton').addEventListener('click', () => {
+    document.querySelector('.nav__list').classList.toggle('nav__list--active');
+})
+

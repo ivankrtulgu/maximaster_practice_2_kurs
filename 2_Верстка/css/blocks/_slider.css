@@ -45,3 +45,7 @@
     scroll-snap-align: start;
     max-width: none;
 }
+
+.slider__title {
+    margin-bottom: 60px;
+}

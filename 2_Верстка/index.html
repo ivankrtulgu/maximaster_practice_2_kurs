@@ -25,7 +25,7 @@
             <div class="header__details">
                 <ul class="header__list list-reset">
                     <li class="header__item">
-                        <a href="/" class="header__link">
+                        <button id='headerButtonLogIn' class="button-reset header__link">
                             <svg 
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -34,7 +34,7 @@
                             d="M5.525,8.650 C7.768,8.650 9.586,6.713 9.586,4.323 C9.586,1.937 7.768,-0.001 5.525,-0.001 C3.283,-0.001 1.467,1.937 1.467,4.324 C1.467,6.713 3.283,8.650 5.525,8.650 ZM2.472,3.917 L8.578,3.917 C8.593,4.054 8.615,4.186 8.615,4.324 C8.615,6.143 7.231,7.618 5.525,7.618 C3.819,7.618 2.436,6.143 2.436,4.324 C2.436,4.186 2.458,4.054 2.472,3.917 ZM7.336,8.588 C7.108,9.441 6.377,10.072 5.498,10.072 C4.623,10.072 3.892,9.441 3.663,8.588 C1.531,9.362 -0.001,11.424 -0.001,13.876 L-0.001,17.001 L11.001,17.001 L11.001,13.876 C11.001,11.424 9.467,9.362 7.336,8.588 Z"/>
                             </svg>
                             Log In
-                        </a>
+                        </button>
                     </li>
                     <li class="header__item">
                         <a href="/" class="header__link">
@@ -185,15 +185,15 @@
                         Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.
                     </p>
                     <div class="sing-up-short-form__input">
-                        <input type="email" class="sing-up-short-form__input-field" placeholder="Your e-mail">
-                        <button type="button" class="sing-up-short-form__button button button--theme-orange">Add</button>
+                        <input id='singUpShortFormInputField' type="email" class="sing-up-short-form__input-field" placeholder="Your e-mail">
+                        <button id='singUpShortFormButton' type="button" class="sing-up-short-form__button button button--theme-orange">Add</button>
                     </div>
                     <!-- <a href="/" class="sing-up-short-form__button button button--theme-light">CHECK NEW ARRIVALS</a> -->
                 </form>
             </div>
         </section>
         <section class="slider">
-            <h2 class="visually-hidden">You may also like Check our lookbook</h2>
+            <h2 class="slider__title subtitle--headline-one">Check our lookbook</h2>
             <div class="container">
                 <div class="slider__content">
                     <button class="button slider__button slider__button--prev button-reset" id="sliderButtonPrev"></button>
@@ -304,5 +304,61 @@
             </nav>
         </div>
     </footer>
+    <form class="login visually-hidden">
+        <div class="login__container">
+            <button type="button" id="loginButtonClose" class="button-reset login__button-close">
+                <svg width="46px" height="46px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="login__inner">
+                <h2 class="login__title title--headline-two">
+                    Log In
+                </h2>
+                <div class="login__row">
+                    <label for="loginFieldEmail" class="login__label">
+                        E-mail
+                    </label>
+                    <input type="email" id="loginFieldEmail" class="login__field" required>
+                </div>
+
+                <div class="login__row">
+                    <div class="login__subrow">
+                        <label for="loginFieldPassword" class="login__label">
+                            Password
+                        </label>
+                        <button type="button" id="loginButtonForgotPassword" class="login__link button-reset">Forgot password</button>
+                    </div>
+                    <p class="login__message-password-reset login__link visually-hidden">
+                        На вашу почту отправлено письмо для смены пароля
+                    </p>
+                    <div class="login__field-wrapper">
+                        <input type="password" id='loginFieldPassword' class="login__field" required>
+                        <button type="button" id='loginButtonShowPassword' class="button-reset">
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="25px" height="14px">
+                            <path fill-rule="evenodd"  fill="rgb(194, 194, 194)"
+                            d="M23.836,6.470 C23.659,6.206 19.412,0.000 11.998,0.000 C4.584,0.000 0.337,6.206 0.160,6.470 C-0.055,6.791 -0.055,7.210 0.160,7.530 C0.337,7.794 4.584,14.000 11.998,14.000 C19.412,14.000 23.659,7.794 23.836,7.530 C24.051,7.210 24.051,6.790 23.836,6.470 ZM11.998,12.103 C6.791,12.103 3.275,8.400 2.132,6.998 C3.272,5.595 6.771,1.897 11.998,1.897 C17.205,1.897 20.721,5.600 21.864,7.002 C20.725,8.405 17.225,12.103 11.998,12.103 ZM11.995,2.566 C11.033,2.566 10.116,2.874 9.344,3.457 C7.399,4.926 7.006,7.711 8.469,9.665 C9.311,10.789 10.599,11.433 12.001,11.433 C12.964,11.433 13.880,11.126 14.652,10.543 C15.594,9.832 16.204,8.794 16.369,7.622 C16.534,6.449 16.235,5.282 15.526,4.335 C14.685,3.211 13.398,2.566 11.995,2.566 ZM14.966,7.422 C14.854,8.218 14.440,8.922 13.800,9.406 C13.276,9.801 12.654,10.010 12.001,10.010 C11.049,10.010 10.175,9.572 9.603,8.809 C8.609,7.482 8.876,5.592 10.196,4.594 C10.720,4.199 11.343,3.990 11.996,3.990 C12.949,3.990 13.823,4.428 14.394,5.190 C14.875,5.833 15.079,6.626 14.966,7.422 ZM13.005,5.042 C12.757,5.042 12.514,5.144 12.337,5.320 C12.163,5.498 12.061,5.742 12.061,5.991 C12.061,6.240 12.163,6.487 12.337,6.662 C12.512,6.838 12.757,6.940 13.005,6.940 C13.254,6.940 13.497,6.838 13.674,6.662 C13.849,6.487 13.950,6.240 13.950,5.991 C13.950,5.742 13.849,5.498 13.674,5.320 C13.497,5.144 13.254,5.042 13.005,5.042 Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="login__row">
+                    <label for="loginFieldRepeatPassword" class="login__label visually-hidden">
+                        Repeat password
+                    </label>
+                    <input type="password" id='loginFieldRepeatPassword' class="login__field visually-hidden">
+                    <p class="login__error-message login__link visually-hidden"></p>
+                </div>
+
+                <button type="submit" id="loginButtonLogIn" class="button button-reset login__button button--theme-orange">Log In</button>
+                <button type="button" id="loginButtonNaveNotAccount" class="login__link button-reset">I don't have an account</button>
+                <button type="button" id="loginButtonHaveAccount" class="login__link button-reset visually-hidden">I already have an account</button>
+            </div>
+        </div>
+    </form>
 </body>
 </html>

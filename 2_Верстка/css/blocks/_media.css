@@ -175,6 +175,10 @@
     .sing-up-short-form__input {
         max-width: max(88.78vw, 410px);
     }
+
+    .login__container {
+        scale: 0.9;
+    }
 }
 
 @media (max-width: 560px){
@@ -213,10 +217,18 @@
     .gallery__content > :nth-child(4).gallery__block--dark::before{
         transform: rotate(90deg);
     }
+
+    .login__container {
+        scale: 0.75;
+    }
 }
 
 @media (max-width: 460px){
-    .nav__list--active{
+    .nav__list{
         width: 388px;
+    }
+
+    .login__container {
+        scale: 0.7;
     }
 }

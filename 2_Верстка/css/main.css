@@ -5,6 +5,8 @@
 
 /* Blocks */
 
+/* Index */
+
 @import url("./blocks/_button.css");
 @import url("./blocks/_logo.css");
 @import url("./blocks/_header.css");
@@ -17,5 +19,14 @@
 @import url("./blocks/_footer.css");
 @import url("./blocks/_login.css");
 
+/* Catalog */
+
+@import url("./blocks/_breadcrumbs.css");
+@import url("./blocks/_catalog.css");
+@import url("./blocks/_product-card.css");
+
+/* Product */
+
+@import url("./blocks/_product-details.css");
 
 @import url("./blocks/_media.css");

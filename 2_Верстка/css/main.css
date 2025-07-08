@@ -29,4 +29,14 @@
 
 @import url("./blocks/_product-details.css");
 
+/* Shopping cart  */
+
+@import url("./blocks/_shopping-bag.css");
+@import url("./blocks/_stepper.css");
+@import url("./blocks/_divider.css");
+@import url("./blocks/_shipping-address.css");
+@import url("./blocks/_payment-options.css");
+
+
+
 @import url("./blocks/_media.css");

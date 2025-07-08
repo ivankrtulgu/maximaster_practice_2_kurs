@@ -1,0 +1,69 @@
+.shipping-address {
+    margin-bottom: 76px;
+}
+
+.shipping-address__form {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background-color: var(--button-grey);
+    border: 1px solid var(--border-button-grey);
+    /* border-top: 1px solid var(--border-button-grey); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shipping-address__title {
+    margin-bottom: 24px;
+}
+
+.shipping-address__subtitle {
+    margin-bottom: 100px;
+    text-transform: uppercase;
+
+}
+
+.shipping-address__row {
+    width: min(580px, 75.62vw);
+}
+
+.shipping-address__label {
+    color: var(--primary);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    display: block; 
+}
+
+.shipping-address__input {
+    width: 100%;
+    padding: 16px;
+    color: var(--primary);
+}
+
+.shipping-address__input:focus {
+    outline: none;
+    border: 1px solid var(--border-button-grey);
+}
+
+.shipping-address__row--extended {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.shipping-address__row-block {
+    width: 100%;
+}
+
+.shipping-address__row {
+    margin-bottom: 50px;
+}
+
+.shipping-address__checkbox-label {
+    color: var(--primary);
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+}

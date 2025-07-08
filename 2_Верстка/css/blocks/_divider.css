@@ -1,0 +1,8 @@
+.divider__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.divider {
+    margin-bottom: 76px;
+}

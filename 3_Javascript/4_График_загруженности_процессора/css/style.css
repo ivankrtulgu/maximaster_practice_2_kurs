@@ -1,0 +1,14 @@
+.info {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mainChartWrapper { 
+    width: 960px; 
+    height: 540px; 
+}

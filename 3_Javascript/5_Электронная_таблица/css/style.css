@@ -1,0 +1,44 @@
+.visually-hidden{
+    /* display: none; */
+    border: none;
+}
+
+.main-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-right: 10px;    
+    margin-left: 35px;    
+
+}
+
+.main-table-body td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;    
+}
+
+.row-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.row-buttons__add-row {
+    margin-bottom: 5px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    aspect-ratio: 1;
+    width: 25px;
+}

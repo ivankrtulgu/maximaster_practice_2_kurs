@@ -54,8 +54,10 @@
     align-self: center;
 }
 
-.login__link:hover {
-    color: var(--border-orange);
+@media (any-hover: hover){
+    .login__link:hover {
+        color: var(--border-orange);
+    }
 }
 
 .login__button,
@@ -99,8 +101,10 @@
     height: 46px;
 }
 
-.login__button-close:hover svg path{
-    stroke: var(--grey);
+@media (any-hover: hover){
+    .login__button-close:hover svg path{
+        stroke: var(--grey);
+    }
 }
 
 .login__button-close:active svg path{

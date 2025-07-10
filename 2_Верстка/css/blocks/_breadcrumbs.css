@@ -13,8 +13,10 @@
     transition: var(--main-transition);
 }
 
-.breadcrumbs__link:hover {
-    color: var(--primary);
+@media (any-hover: hover){ 
+    .breadcrumbs__link:hover {
+        color: var(--primary);
+    }
 }
 
 .breadcrumbs__link:active {

@@ -111,9 +111,12 @@
     /* background-color: ; */
 }
 
-.product-details__size-button:hover {
-    background-color: var(--grey);
+@media (any-hover: hover){
+    .product-details__size-button:hover {
+        background-color: var(--grey);
+    }
 }
+
 
 .product-details__size-button--selected {
     background-color: var(--dark-primary);

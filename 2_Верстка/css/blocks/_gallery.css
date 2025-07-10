@@ -15,10 +15,13 @@
     text-decoration: none;
 }
 
-.gallery__content a:hover p{
-    transition: var(--main-transition);
-    color: var(--primary);
+@media (any-hover: hover){
+    .gallery__content a:hover p{
+        transition: var(--main-transition);
+        color: var(--primary);
+    }
 }
+
 
 .gallery__content a:active p{
     transition: var(--main-transition);

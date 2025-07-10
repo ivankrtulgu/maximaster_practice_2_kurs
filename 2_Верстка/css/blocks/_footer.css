@@ -47,8 +47,10 @@ p.footer__link {
     transition: 0.5s;
 }
 
-.footer__link:hover svg{
-    fill: var(--primary)
+@media (any-hover: hover){ 
+    .footer__link:hover svg{
+        fill: var(--primary)
+    }
 }
 
 .footer__link:active svg{

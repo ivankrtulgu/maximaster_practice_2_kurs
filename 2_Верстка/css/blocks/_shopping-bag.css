@@ -148,3 +148,16 @@
 .shopping-bag__delete-td {
     text-align: center;
 }
+
+.shopping-bag__row--deleted {
+    opacity: 0.3;
+}
+
+.shopping-bag__row--deleted {
+    opacity: 0.3;
+    pointer-events: none;
+}
+.shopping-bag__row--deleted .shopping-bag__button-delete{
+    transform: rotate(45deg);
+    pointer-events: auto;
+}

@@ -7,7 +7,8 @@
     <script src="./js/script.js" defer></script>
     <script src="./js/header.js" defer></script>
     <script src="./js/login.js" defer></script>
-    <!-- <script src="./js/product-details.js" defer></script> -->
+    <script src="./js/shopping_cart.js" defer></script>
+    <script src="./js/stepper.js" defer></script>
     <title>Корзина</title>
 </head>
 <body class="page__body">
@@ -28,7 +29,7 @@
             <div class="header__details">
                 <ul class="header__list list-reset">
                     <li class="header__item">
-                        <button id='headerButtonLogIn' class="button-reset header__link">
+                        <button type="button" id='headerButtonLogIn' class="button-reset header__link">
                             <svg 
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -40,7 +41,7 @@
                         </button>
                     </li>
                     <li class="header__item">
-                        <a href="/" class="header__link">
+                        <a href="./shopping_cart.html" class="header__link">
                             <svg 
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -53,7 +54,7 @@
                     </li>
                     <li class="header__item">
                         <input type="text" class="header__input header__input--visually-hidden" id="headerSearch">
-                        <button class="header__button button-reset" id="headerSearchButton" aria-label="Search" title="Search">
+                        <button type="button" class="header__button button-reset" id="headerSearchButton" aria-label="Search" title="Search">
                             <svg 
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -64,7 +65,7 @@
                         </button>
                     </li>   
                     <li class="header__item header__item--visually-hidden">
-                        <button class="header__button button-reset" id="headerBurgerMenuButton" aria-label="Menu" title="Menu">
+                        <button type="button" class="header__button button-reset" id="headerBurgerMenuButton" aria-label="Menu" title="Menu">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                 <path d="M5 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -78,397 +79,402 @@
     </header>
     
     <main class="main">
+        <form action="" class="shopping-bag-form">
 
-        <section class="shopping-bag">
-            <div class="container">
-                <div class="shopping-bag__content">
-                    <h1 class="shopping-bag__title title--headline-two">
-                        Your shopping bag
-                    </h1>
-                    <p class="shopping-bag__subtitle subtitle--headline-two">
-                        Items reserved for limited time only
-                    </p>
-                    <table class="shopping-bag__table">
-                        <thead class="shopping-bag__thead">
-                            <tr>
-                                <th>
-                                    Product
-                                </th>
-                                <th>
-                                    Description
-                                </th>
-                                <th>
-                                    Color
-                                </th>
-                                <th>
-                                    Size
-                                </th>
-                                <th>
-                                    Qty
-                                </th>
-                                <th>
-                                    Amount
-                                </th>
-                                <th>
-                                    Delete
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="shopping-bag__tbody">
-                            <tr>
-                                <td class="shopping-bag__image-td">
-                                    <img class="shopping-bag__image" src="./images/Converse_Chuck_Taylor.jpg" alt="">
-                                </td>
-                                <td class="shopping-bag__description-td">
-                                    <h3 class="shopping-bag__product-title title--headline-three">
-                                        Floral plimsoll
-                                    </h2> 
-                                    <p class="shopping-bag__product-article subtitle--headline-three">
-                                        Ref. 2514/302
-                                    </p> 
-                                </td>
-                                <td class="shopping-bag__color-td">
-                                    One Color
-                                </td>
-                                <td class="shopping-bag__size-td">
-                                    39
-                                </td>
-                                <td class="shopping-bag__qty-td">
-                                    <div class="stepper">
-                                        <input value="1" min="1" max="10" id="stepperCountInput1" type="number" class="stepper__count">
-                                            
-                                        </input>
-                                        <div class="stepper__buttons">
-                                            <button class="button button-reset stepper__plus">+</button>
-                                            <button class="button button-reset stepper__minus">-</button>
+            <section class="shopping-bag">
+                <div class="container">
+                    <div class="shopping-bag__content">
+                        <h1 class="shopping-bag__title title--headline-two">
+                            Your shopping bag
+                        </h1>
+                        <p class="shopping-bag__subtitle subtitle--headline-two">
+                            Items reserved for limited time only
+                        </p>
+                        <table class="shopping-bag__table">
+                            <thead class="shopping-bag__thead">
+                                <tr>
+                                    <th>
+                                        Product
+                                    </th>
+                                    <th>
+                                        Description
+                                    </th>
+                                    <th>
+                                        Color
+                                    </th>
+                                    <th>
+                                        Size
+                                    </th>
+                                    <th>
+                                        Qty
+                                    </th>
+                                    <th>
+                                        Amount
+                                    </th>
+                                    <th>
+                                        Delete
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="shopping-bag__tbody">
+                                <tr>
+                                    <td class="shopping-bag__image-td">
+                                        <img class="shopping-bag__image" src="./images/Converse_Chuck_Taylor.jpg" alt="">
+                                    </td>
+                                    <td class="shopping-bag__description-td">
+                                        <h3 class="shopping-bag__product-title title--headline-three">
+                                            Floral plimsoll
+                                        </h2> 
+                                        <p class="shopping-bag__product-article subtitle--headline-three">
+                                            Ref. 2514/302
+                                        </p> 
+                                    </td>
+                                    <td class="shopping-bag__color-td">
+                                        One Color
+                                    </td>
+                                    <td class="shopping-bag__size-td">
+                                        39
+                                    </td>
+                                    <td class="shopping-bag__qty-td">
+                                        <div class="stepper">
+                                            <input value="1" min="1" max="10" id="stepperCountInput1" type="number" class="stepper__count">
+                                                
+                                            </input>
+                                            <div class="stepper__buttons">
+                                                <button type="button" class="button button-reset stepper__plus">+</button>
+                                                <button type="button" class="button button-reset stepper__minus">-</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                                <td class="shopping-bag__amount-td">
-                                    €99,95
-                                </td>
-                                <td class="shopping-bag__delete-td">
-                                    <button type="button" id="shoppingBagButtonDelete" class="button-reset shopping-bag__button-delete">
-                                        <svg width="46px" height="46px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                </td>
-                            </tr>
+                                    </td>
+                                    <td class="shopping-bag__amount-td">
+                                        €99,95
+                                    </td>
+                                    <td class="shopping-bag__delete-td">
+                                        <button type="button" type="button" id="shoppingBagButtonDelete" class="button-reset shopping-bag__button-delete">
+                                            <svg width="46px" height="46px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+        
+                                <tr>
+                                    <td class="shopping-bag__image-td">
+                                        <img class="shopping-bag__image" src="./images/Converse_Chuck_Taylor.jpg" alt="">
+                                    </td>
+                                    <td class="shopping-bag__description-td">
+                                        <h3 class="shopping-bag__product-title title--headline-three">
+                                            Floral plimsoll
+                                        </h2> 
+                                        <p class="shopping-bag__product-article subtitle--headline-three">
+                                            Ref. 2514/302
+                                        </p> 
+                                    </td>
+                                    <td class="shopping-bag__color-td">
+                                        One Color
+                                    </td>
+                                    <td class="shopping-bag__size-td">
+                                        39
+                                    </td>
+                                    <td class="shopping-bag__qty-td">
+                                        <div class="stepper">
+                                            <input value="1" min="1" max="10" id="stepperCountInput2" type="number" class="stepper__count">
+                                                
+                                            </input>
+                                            <div class="stepper__buttons">
+                                                <button type="button" class="button button-reset stepper__plus">+</button>
+                                                <button type="button" class="button button-reset stepper__minus">-</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shopping-bag__amount-td">
+                                        €99,95
+                                    </td>
+                                    <td class="shopping-bag__delete-td">
+                                        <button type="button" type="button" id="shoppingBagButtonDelete" class="button-reset shopping-bag__button-delete">
+                                            <svg width="46px" height="46px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+        
+                                <tr>
+                                    <td class="shopping-bag__image-td">
+                                        <img class="shopping-bag__image" src="./images/Converse_Chuck_Taylor.jpg" alt="">
+                                    </td>
+                                    <td class="shopping-bag__description-td">
+                                        <h3 class="shopping-bag__product-title title--headline-three">
+                                            Floral plimsoll
+                                        </h2> 
+                                        <p class="shopping-bag__product-article subtitle--headline-three">
+                                            Ref. 2514/302
+                                        </p> 
+                                    </td>
+                                    <td class="shopping-bag__color-td">
+                                        One Color
+                                    </td>
+                                    <td class="shopping-bag__size-td">
+                                        39
+                                    </td>
+                                    <td class="shopping-bag__qty-td">
+                                        <div class="stepper">
+                                            <input value="1" min="1" max="10" id="stepperCountInput3" type="number" class="stepper__count">
+                                                
+                                            </input>
+                                            <div class="stepper__buttons">
+                                                <button type="button" class="button button-reset stepper__plus">+</button>
+                                                <button type="button" class="button button-reset stepper__minus">-</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shopping-bag__amount-td">
+                                        €99,95
+                                    </td>
+                                    <td class="shopping-bag__delete-td">
+                                        <button type="button" type="button" id="shoppingBagButtonDelete" class="button-reset shopping-bag__button-delete">
+                                            <svg width="46px" height="46px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+        
+                                <tr>
+                                    <td class="shopping-bag__image-td">
+                                        <img class="shopping-bag__image" src="./images/Converse_Chuck_Taylor.jpg" alt="">
+                                    </td>
+                                    <td class="shopping-bag__description-td">
+                                        <h3 class="shopping-bag__product-title title--headline-three">
+                                            Floral plimsoll
+                                        </h2> 
+                                        <p class="shopping-bag__product-article subtitle--headline-three">
+                                            Ref. 2514/302
+                                        </p> 
+                                    </td>
+                                    <td class="shopping-bag__color-td">
+                                        One Color
+                                    </td>
+                                    <td class="shopping-bag__size-td">
+                                        39
+                                    </td>
+                                    <td class="shopping-bag__qty-td">
+                                        <div class="stepper">
+                                            <input value="1" min="1" max="10" id="stepperCountInput4" type="number" class="stepper__count">
+                                                
+                                            </input>
+                                            <div class="stepper__buttons">
+                                                <button type="button" class="button button-reset stepper__plus">+</button>
+                                                <button type="button" class="button button-reset stepper__minus">-</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shopping-bag__amount-td">
+                                        €99,95
+                                    </td>
+                                    <td class="shopping-bag__delete-td">
+                                        <button type="button" type="button" id="shoppingBagButtonDelete" class="button-reset shopping-bag__button-delete">
+                                            <svg width="46px" height="46px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+        
+                                <tr>
+                                    <td class="shopping-bag__image-td">
+                                        <img class="shopping-bag__image" src="./images/Converse_Chuck_Taylor.jpg" alt="">
+                                    </td>
+                                    <td class="shopping-bag__description-td">
+                                        <h3 class="shopping-bag__product-title title--headline-three">
+                                            Floral plimsoll
+                                        </h2> 
+                                        <p class="shopping-bag__product-article subtitle--headline-three">
+                                            Ref. 2514/302
+                                        </p> 
+                                    </td>
+                                    <td class="shopping-bag__color-td">
+                                        One Color
+                                    </td>
+                                    <td class="shopping-bag__size-td">
+                                        39
+                                    </td>
+                                    <td class="shopping-bag__qty-td">
+                                        <div class="stepper">
+                                            <input value="1" min="1" max="10" id="stepperCountInput5" type="number" class="stepper__count">
+                                                
+                                            </input>
+                                            <div class="stepper__buttons">
+                                                <button type="button" class="button button-reset stepper__plus">+</button>
+                                                <button type="button" class="button button-reset stepper__minus">-</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shopping-bag__amount-td">
+                                        €99,95
+                                    </td>
+                                    <td class="shopping-bag__delete-td">
+                                        <button type="button" type="button" id="shoppingBagButtonDelete" class="button-reset shopping-bag__button-delete">
+                                            <svg width="46px" height="46px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="shopping-bag__tfoot">
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Subtotal</td>
+                                    <td>€567,95</td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <footer class="shopping-bag__footer">
+                            <a href="./index.html" class="shopping-bag__link ">
+                                Continue Shopping
+                            </a>
+                            <button type="button" id="shoppingBagButtonOrderNow" class="shopping-bag__button button button-reset button--theme-orange">
+                                Order Now
+                            </button>
+                        </footer>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider visually-hidden">
+                <div class="container">
+                    <div class="divider__inner">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="94px" height="18px">
+                            <path fill-rule="evenodd"  fill="rgb(246, 130, 54)"
+                            d="M77.836,18.006 L77.454,17.638 L77.094,17.987 L62.248,2.514 L47.319,18.006 L46.938,17.638 L46.577,17.987 L31.731,2.514 L16.802,18.006 L16.421,17.638 L16.061,17.987 L0.008,1.257 L1.292,0.013 L16.437,15.797 L31.666,-0.006 L31.747,0.073 L31.809,0.013 L46.954,15.797 L62.183,-0.006 L62.264,0.073 L62.326,0.013 L77.471,15.797 L92.699,-0.006 L93.992,1.241 L77.836,18.006 Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <section class="shipping-address visually-hidden">
+                <div class="container">
+                    <div action="" class="shipping-address__form">
+                        <h2 class="shipping-address__title title--headline-two">
+                            Shipping address
+                        </h2>
+                        <p class="shipping-address__subtitle subtitle--headline-two">
+                            All fields are required
+                        </p>
+                        <div class="shipping-address__row">
+                            <label for="shippingAddressDeliveryMethodInput" class="shipping-address__label" id="shippingAddressDeliveryMethodLabel">Select delivery method</label>
+                            <input id="shippingAddressDeliveryMethodInput" type="text" class="shipping-address__input" list="shippingAddressDeliveryMethodList" required>
+                            <datalist id="shippingAddressDeliveryMethodList">
+                                <option value="DHL International - €15,00">
+                                <option value="DHL International - €25,00">
+                                <option value="DHL International - €35,00">
+                            </datalist>
+                        </div>
+                        <div class="shipping-address__row shipping-address__row--extended">
+                            <div class="shipping-address__row-block">
+                                <label for="shippingAddressFirstNameInput" class="shipping-address__label" id="shippingAddressFirstNameLabel">First name</label>
+                                <input type="text" class="shipping-address__input" id="shippingAddressFirstNameInput" required>
+                            </div>
+                            <div class="shipping-address__row-block">
+                                <label for="shippingAddressLastNameInput" class="shipping-address__label" id="shippingAddressLastNameLabel">Last name</label>
+                                <input type="text" class="shipping-address__input" id="shippingAddressLastNameInput" required>
+                            </div>
+                        </div>
+                        <div class="shipping-address__row">
+                            <label for="shippingAddressLine1Input" class="shipping-address__label" id="shippingAddressLine1Label">Address (line 1)</label>
+                            <input type="text" class="shipping-address__input" id="shippingAddressLine1Input" required>
+                        </div>
+                        <div class="shipping-address__row">
+                            <label for="shippingAddressLine2Input" class="shipping-address__label" id="shippingAddressLine2Label">Address (line 2)</label>
+                            <input type="text" class="shipping-address__input" id="shippingAddressLine2Input" required>
+                        </div>
+                        <div class="shipping-address__row shipping-address__row--extended">
+                            <div class="shipping-address__row-block">
+                                <label for="shippingAddressCityInput" class="shipping-address__label" id="shippingAddressCityLabel">City</label>
+                                <input type="text" class="shipping-address__input" id="shippingAddressCityInput" required>
+                            </div>
+                            <div class="shipping-address__row-block">
+                                <label for="shippingAddressPostalCodeInput" class="shipping-address__label" id="shippingAddressPostalCodeLabel">Postal Code</label>
+                                <input type="text" class="shipping-address__input" id="shippingAddressPostalCodeInput" required>
+                            </div>
+                        </div>
+                        <div class="shipping-address__row shipping-address__row--extended">
+                            <div class="shipping-address__row-block">
+                                <label for="shippingAddressPhoneInput" class="shipping-address__label" id="shippingAddressPhoneLabel">Phone number</label>
+                                <input type="tel" class="shipping-address__input" id="shippingAddressPhoneInput" required>
+                            </div>
+                            <div class="shipping-address__row-block">
+                                <label for="shippingAddressEmailInput" class="shipping-address__label" id="shippingAddressEmailLabel">E-Mail</label>
+                                <input type="email" class="shipping-address__input" id="shippingAddressEmailInput" required>
+                            </div>
+                        </div>
+                        <label class="shipping-address__checkbox-label" for="shippingAddressUseThisAddressForBillingCheckbox">
+                            <input id="shippingAddressUseThisAddressForBillingCheckbox" type="checkbox" class="shipping-address__checkbox">
+                            Use this address for billing
+                        </label>
+                    </div>
+                </div>
+            </section>
     
-                            <tr>
-                                <td class="shopping-bag__image-td">
-                                    <img class="shopping-bag__image" src="./images/Converse_Chuck_Taylor.jpg" alt="">
-                                </td>
-                                <td class="shopping-bag__description-td">
-                                    <h3 class="shopping-bag__product-title title--headline-three">
-                                        Floral plimsoll
-                                    </h2> 
-                                    <p class="shopping-bag__product-article subtitle--headline-three">
-                                        Ref. 2514/302
-                                    </p> 
-                                </td>
-                                <td class="shopping-bag__color-td">
-                                    One Color
-                                </td>
-                                <td class="shopping-bag__size-td">
-                                    39
-                                </td>
-                                <td class="shopping-bag__qty-td">
-                                    <div class="stepper">
-                                        <input value="1" min="1" max="10" id="stepperCountInput2" type="number" class="stepper__count">
-                                            
-                                        </input>
-                                        <div class="stepper__buttons">
-                                            <button class="button button-reset stepper__plus">+</button>
-                                            <button class="button button-reset stepper__minus">-</button>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="shopping-bag__amount-td">
-                                    €99,95
-                                </td>
-                                <td class="shopping-bag__delete-td">
-                                    <button type="button" id="shoppingBagButtonDelete" class="button-reset shopping-bag__button-delete">
-                                        <svg width="46px" height="46px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                </td>
-                            </tr>
+            <div class="divider visually-hidden">
+                <div class="container">
+                    <div class="divider__inner">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="94px" height="18px">
+                            <path fill-rule="evenodd"  fill="rgb(246, 130, 54)"
+                            d="M77.836,18.006 L77.454,17.638 L77.094,17.987 L62.248,2.514 L47.319,18.006 L46.938,17.638 L46.577,17.987 L31.731,2.514 L16.802,18.006 L16.421,17.638 L16.061,17.987 L0.008,1.257 L1.292,0.013 L16.437,15.797 L31.666,-0.006 L31.747,0.073 L31.809,0.013 L46.954,15.797 L62.183,-0.006 L62.264,0.073 L62.326,0.013 L77.471,15.797 L92.699,-0.006 L93.992,1.241 L77.836,18.006 Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
     
-                            <tr>
-                                <td class="shopping-bag__image-td">
-                                    <img class="shopping-bag__image" src="./images/Converse_Chuck_Taylor.jpg" alt="">
-                                </td>
-                                <td class="shopping-bag__description-td">
-                                    <h3 class="shopping-bag__product-title title--headline-three">
-                                        Floral plimsoll
-                                    </h2> 
-                                    <p class="shopping-bag__product-article subtitle--headline-three">
-                                        Ref. 2514/302
-                                    </p> 
-                                </td>
-                                <td class="shopping-bag__color-td">
-                                    One Color
-                                </td>
-                                <td class="shopping-bag__size-td">
-                                    39
-                                </td>
-                                <td class="shopping-bag__qty-td">
-                                    <div class="stepper">
-                                        <input value="1" min="1" max="10" id="stepperCountInput3" type="number" class="stepper__count">
-                                            
-                                        </input>
-                                        <div class="stepper__buttons">
-                                            <button class="button button-reset stepper__plus">+</button>
-                                            <button class="button button-reset stepper__minus">-</button>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="shopping-bag__amount-td">
-                                    €99,95
-                                </td>
-                                <td class="shopping-bag__delete-td">
-                                    <button type="button" id="shoppingBagButtonDelete" class="button-reset shopping-bag__button-delete">
-                                        <svg width="46px" height="46px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                </td>
-                            </tr>
-    
-                            <tr>
-                                <td class="shopping-bag__image-td">
-                                    <img class="shopping-bag__image" src="./images/Converse_Chuck_Taylor.jpg" alt="">
-                                </td>
-                                <td class="shopping-bag__description-td">
-                                    <h3 class="shopping-bag__product-title title--headline-three">
-                                        Floral plimsoll
-                                    </h2> 
-                                    <p class="shopping-bag__product-article subtitle--headline-three">
-                                        Ref. 2514/302
-                                    </p> 
-                                </td>
-                                <td class="shopping-bag__color-td">
-                                    One Color
-                                </td>
-                                <td class="shopping-bag__size-td">
-                                    39
-                                </td>
-                                <td class="shopping-bag__qty-td">
-                                    <div class="stepper">
-                                        <input value="1" min="1" max="10" id="stepperCountInput4" type="number" class="stepper__count">
-                                            
-                                        </input>
-                                        <div class="stepper__buttons">
-                                            <button class="button button-reset stepper__plus">+</button>
-                                            <button class="button button-reset stepper__minus">-</button>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="shopping-bag__amount-td">
-                                    €99,95
-                                </td>
-                                <td class="shopping-bag__delete-td">
-                                    <button type="button" id="shoppingBagButtonDelete" class="button-reset shopping-bag__button-delete">
-                                        <svg width="46px" height="46px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                </td>
-                            </tr>
-    
-                            <tr>
-                                <td class="shopping-bag__image-td">
-                                    <img class="shopping-bag__image" src="./images/Converse_Chuck_Taylor.jpg" alt="">
-                                </td>
-                                <td class="shopping-bag__description-td">
-                                    <h3 class="shopping-bag__product-title title--headline-three">
-                                        Floral plimsoll
-                                    </h2> 
-                                    <p class="shopping-bag__product-article subtitle--headline-three">
-                                        Ref. 2514/302
-                                    </p> 
-                                </td>
-                                <td class="shopping-bag__color-td">
-                                    One Color
-                                </td>
-                                <td class="shopping-bag__size-td">
-                                    39
-                                </td>
-                                <td class="shopping-bag__qty-td">
-                                    <div class="stepper">
-                                        <input value="1" min="1" max="10" id="stepperCountInput5" type="number" class="stepper__count">
-                                            
-                                        </input>
-                                        <div class="stepper__buttons">
-                                            <button class="button button-reset stepper__plus">+</button>
-                                            <button class="button button-reset stepper__minus">-</button>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="shopping-bag__amount-td">
-                                    €99,95
-                                </td>
-                                <td class="shopping-bag__delete-td">
-                                    <button type="button" id="shoppingBagButtonDelete" class="button-reset shopping-bag__button-delete">
-                                        <svg width="46px" height="46px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tfoot class="shopping-bag__tfoot">
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Subtotal</td>
-                                <td>€567,95</td>
-                                <td></td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <footer class="shopping-bag__footer">
-                        <a href="./index.html" class="shopping-bag__link ">
-                            Continue Shopping
-                        </a>
-                        <button class="shopping-bag__button button button-reset button--theme-orange">
+            <section class="payment-options visually-hidden">
+                <div class="container">
+                    <div action="" class="payment-options__form">
+                        <h2 class="payment-options__title title--headline-two">
+                            Payment Options
+                        </h2>
+                        <p class="payment-options__subtitle subtitle--headline-two">
+                            All fields are required
+                        </p>
+                        <div class="payment-options__summary">
+                            <p class="payment-options__subtotal">Subtotal:</p>
+                            <p class="payment-options__subtotal-value">€567,95</p>
+                            <p class="payment-options__shipping">Shipping:</p>
+                            <p class="payment-options__subtotal-value">€15,00</p>
+                            <p class="payment-options__total">Total:</p>
+                            <p class="payment-options__total-value">€582,95</p>
+                        </div>
+                        <div class="payment-options__row" id="paymentOptionsRow">
+                            <label for="paymentOptionsPaymentMethodInput" class="payment-options__label" id="paymentOptionsPaymentMethodLabel">
+                                Select payment method
+                            </label>
+                            <input id="paymentOptionsPaymentMethodInput" type="text" class="payment-options__input" list="paymentOptionsPaymentMethodList" required>
+                            <datalist id="paymentOptionsPaymentMethodList">
+                                <option value="Visa">
+                                <option value="MasterCard">
+                                <option value="PayPal">
+                                <option value="Cash">
+                            </datalist>
+                        </div>
+                        <button class="payment-options__button button button-reset button--theme-orange" id="paymentOptionsOrderNow">
                             Order Now
                         </button>
-                    </footer>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <div class="divider">
-            <div class="container">
-                <div class="divider__inner">
-                    <svg 
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="94px" height="18px">
-                        <path fill-rule="evenodd"  fill="rgb(246, 130, 54)"
-                        d="M77.836,18.006 L77.454,17.638 L77.094,17.987 L62.248,2.514 L47.319,18.006 L46.938,17.638 L46.577,17.987 L31.731,2.514 L16.802,18.006 L16.421,17.638 L16.061,17.987 L0.008,1.257 L1.292,0.013 L16.437,15.797 L31.666,-0.006 L31.747,0.073 L31.809,0.013 L46.954,15.797 L62.183,-0.006 L62.264,0.073 L62.326,0.013 L77.471,15.797 L92.699,-0.006 L93.992,1.241 L77.836,18.006 Z"/>
-                    </svg>
-                </div>
-            </div>
-        </div>
-
-        <section class="shipping-address">
-            <div class="container">
-                <form action="" class="shipping-address__form">
-                    <h2 class="shipping-address__title title--headline-two">
-                        Shipping address
-                    </h2>
-                    <p class="shipping-address__subtitle subtitle--headline-two">
-                        All fields are required
-                    </p>
-                    <div class="shipping-address__row">
-                        <label for="shippingAddressDeliveryMethod" class="shipping-address__label">Select delivery method</label>
-                        <input id="shippingAddressDeliveryMethod" type="text" class="shipping-address__input" list="shippingAddressDeliveryMethodList" required>
-                        <datalist id="shippingAddressDeliveryMethodList">
-                            <option value="DHL International - €15,00">
-                            <option value="DHL International - €25,00">
-                            <option value="DHL International - €35,00">
-                        </datalist>
-                    </div>
-                    <div class="shipping-address__row shipping-address__row--extended">
-                        <div class="shipping-address__row-block">
-                            <label for="" class="shipping-address__label">First name</label>
-                            <input type="text" class="shipping-address__input" required>
-                        </div>
-                        <div class="shipping-address__row-block">
-                            <label for="" class="shipping-address__label">Last name</label>
-                            <input type="text" class="shipping-address__input" required>
-                        </div>
-                    </div>
-                    <div class="shipping-address__row">
-                            <label for="" class="shipping-address__label">Address (line 1)</label>
-                            <input type="text" class="shipping-address__input" required>
-                    </div>
-                    <div class="shipping-address__row">
-                            <label for="" class="shipping-address__label">Address (line 2)</label>
-                            <input type="text" class="shipping-address__input" required>
-                    </div>
-                    <div class="shipping-address__row shipping-address__row--extended">
-                        <div class="shipping-address__row-block">
-                            <label for="" class="shipping-address__label">City</label>
-                            <input type="text" class="shipping-address__input" required>
-                        </div>
-                        <div class="shipping-address__row-block">
-                            <label for="" class="shipping-address__label">Postal Code</label>
-                            <input type="text" class="shipping-address__input" required>
-                        </div>
-                    </div>
-                    <div class="shipping-address__row shipping-address__row--extended">
-                        <div class="shipping-address__row-block">
-                            <label for="" class="shipping-address__label">Phone number</label>
-                            <input type="tel" class="shipping-address__input" required>
-                        </div>
-                        <div class="shipping-address__row-block">
-                            <label for="" class="shipping-address__label">E-Mail</label>
-                            <input type="email" class="shipping-address__input" required>
-                        </div>
-                    </div>
-                    <label class="shipping-address__checkbox-label" for="shippingAddressUseThisAddressForBillingCheckbox">
-                        <input id="shippingAddressUseThisAddressForBillingCheckbox" type="checkbox" class="shipping-address__checkbox">
-                        Use this address for billing
-                    </label>
-                </form>
-            </div>
-        </section>
-
-        <div class="divider">
-            <div class="container">
-                <div class="divider__inner">
-                    <svg 
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="94px" height="18px">
-                        <path fill-rule="evenodd"  fill="rgb(246, 130, 54)"
-                        d="M77.836,18.006 L77.454,17.638 L77.094,17.987 L62.248,2.514 L47.319,18.006 L46.938,17.638 L46.577,17.987 L31.731,2.514 L16.802,18.006 L16.421,17.638 L16.061,17.987 L0.008,1.257 L1.292,0.013 L16.437,15.797 L31.666,-0.006 L31.747,0.073 L31.809,0.013 L46.954,15.797 L62.183,-0.006 L62.264,0.073 L62.326,0.013 L77.471,15.797 L92.699,-0.006 L93.992,1.241 L77.836,18.006 Z"/>
-                    </svg>
-                </div>
-            </div>
-        </div>
-
-        <section class="payment-options">
-            <div class="container">
-                <form action="" class="payment-options__form">
-                    <h2 class="payment-options__title title--headline-two">
-                        Payment Options
-                    </h2>
-                    <p class="payment-options__subtitle subtitle--headline-two">
-                        All fields are required
-                    </p>
-                    <div class="payment-options__summary">
-                        <p class="payment-options__subtotal">Subtotal:</p>
-                        <p class="payment-options__subtotal-value">€567,95</p>
-                        <p class="payment-options__shipping">Shipping:</p>
-                        <p class="payment-options__subtotal-value">€15,00</p>
-                        <p class="payment-options__total">Total:</p>
-                        <p class="payment-options__total-value">€582,95</p>
-                    </div>
-                    <div class="payment-options__row">
-                        <label for="shippingAddressDeliveryMethod" class="payment-options__label">Select payment method</label>
-                        <input id="shippingAddressDeliveryMethod" type="text" class="payment-options__input" list="shippingAddressDeliveryMethodList" required>
-                        <datalist id="shippingAddressDeliveryMethodList">
-                            <option value="DHL International - €15,00">
-                            <option value="DHL International - €25,00">
-                            <option value="DHL International - €35,00">
-                        </datalist>
-                    </div>
-                    <button class="payment-options__button button button-reset button--theme-orange">
-                        Order Now
-                    </button>
-                </form>
-            </div>
-        </section>
-
+        </form>
     </main>
 
     <footer class="footer">

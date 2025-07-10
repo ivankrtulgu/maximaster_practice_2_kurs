@@ -30,3 +30,10 @@ for (let el of productDetailsSizeButtons) {
         el.classList.toggle('product-details__size-button--selected');
     })
 }
+
+productDetailsAddToCartButton = document.getElementById("productDetailsAddToCartButton")
+productDetailsAddToCartButton.addEventListener("click", () => {
+    productDetailsAddToCartButton.classList.toggle('button--theme-orange-activated')
+    productDetailsAddToCartButton.textContent === "" 
+    productDetailsAddToCartButton.textContent = (productDetailsAddToCartButton.textContent === 'Add to cart') ? 'Added to cart' : 'Add to cart';
+})

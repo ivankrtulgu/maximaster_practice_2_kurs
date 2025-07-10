@@ -17,7 +17,7 @@
     margin-bottom: 64px;
     display: flex;
     flex-direction: column;
-    /* background-image: url(../images/SliderImg.jpg);
+    /* background-image: url(../../images/SliderImg.jpg);
     background-repeat: no-repeat; */
 }
 
@@ -47,17 +47,17 @@
 }
 
 .product-details__thumbnail-button--bg1 {
-    background-image: url(../images/SliderImg.jpg);
+    background-image: url(../../images/SliderImg.jpg);
 
 }
 
 .product-details__thumbnail-button--bg2 {
-    background-image: url(../images/O1CN01Hty6801YnDqWl6e7.jpg);
+    background-image: url(../../images/O1CN01Hty6801YnDqWl6e7.jpg);
     
 }
 
 .product-details__thumbnail-button--bg3 {
-    background-image: url(../images/slozhno-vybrat-cvet-ot-belogo-do-chernogo-v-gradacii.jpg);
+    background-image: url(../../images/slozhno-vybrat-cvet-ot-belogo-do-chernogo-v-gradacii.jpg);
     
 }
 
@@ -111,9 +111,12 @@
     /* background-color: ; */
 }
 
-.product-details__size-button:hover {
-    background-color: var(--grey);
+@media (any-hover: hover){
+    .product-details__size-button:hover {
+        background-color: var(--grey);
+    }
 }
+
 
 .product-details__size-button--selected {
     background-color: var(--dark-primary);

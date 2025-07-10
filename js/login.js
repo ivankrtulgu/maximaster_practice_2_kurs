@@ -8,7 +8,7 @@ if (localStorage['user_email']) {
     loginFieldEmail.value = localStorage['user_email'];
 }
 else {
-    loginFieldEmail.value = ''
+    loginFieldEmail.value = '';
 }
 
 loginButtonForgotPassword = document.getElementById('loginButtonForgotPassword');

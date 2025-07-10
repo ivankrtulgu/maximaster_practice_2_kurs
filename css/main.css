@@ -899,10 +899,13 @@ input[type=number]::-webkit-outer-spin-button {
     text-decoration: none;
 }
 
-.gallery__content a:hover p{
-    transition: var(--main-transition);
-    color: var(--primary);
+@media (any-hover: hover){
+    .gallery__content a:hover p{
+        transition: var(--main-transition);
+        color: var(--primary);
+    }
 }
+
 
 .gallery__content a:active p{
     transition: var(--main-transition);
@@ -936,7 +939,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: inline-block;
     width: 28px;
     height: 12px;
-    background-image: url('../icons/LeftArrow.svg');
+    background-image: url('../../icons/LeftArrow.svg');
     margin-bottom: 14px;
 }
 
@@ -949,7 +952,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .gallery__image--bg-1 {
-    background-image: url('../images/e199ba639ef13f86fe1377eeca51a811ffdcf45d.jpg');    
+    background-image: url('../../images/e199ba639ef13f86fe1377eeca51a811ffdcf45d.jpg');    
     background-size: cover;
     background-position: center;
 }
@@ -957,31 +960,31 @@ input[type=number]::-webkit-outer-spin-button {
 .gallery__image--bg-2 {
     background-size: cover;
     background-position: center;
-    background-image: url('../images/Sf8649c1d4e7c45a28cddd2c28befd378P.jpg');
+    background-image: url('../../images/Sf8649c1d4e7c45a28cddd2c28befd378P.jpg');
 }
 
 .gallery__image--bg-3 {
     background-size: cover;
     background-position: center;
-    background-image: url('../images/Converse_Chuck_Taylor.jpg');
+    background-image: url('../../images/Converse_Chuck_Taylor.jpg');
 }
 
 .gallery__image--bg-4 {
     background-size: cover;
     background-position: center;
-    background-image: url('../images/Arcteryx Palisade Pant.jpg');
+    background-image: url('../../images/Arcteryx Palisade Pant.jpg');
 }
 
 .gallery__image--bg-5 {
     background-size: cover;
     background-position: center;
-    background-image: url('../images/800150.jpg');
+    background-image: url('../../images/800150.jpg');
 }
 
 .gallery__image--bg-6 {
     background-size: cover;
     background-position: center;
-    background-image: url('../images/Zara Jackets & Coats _ Zara Black Straight Cut Blazer _ Color_ Black _ Size_ Various.jpg');
+    background-image: url('../../images/Zara Jackets & Coats _ Zara Black Straight Cut Blazer _ Color_ Black _ Size_ Various.jpg');
 }
 
 .gallery__title-image {
@@ -1147,7 +1150,7 @@ input[type=number]::-webkit-outer-spin-button {
 .slider__button--prev {
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url(../icons/Arrow_Thin_Prev.svg);
+    background-image: url(../../icons/Arrow_Thin_Prev.svg);
     position: absolute;
 }
 
@@ -1158,7 +1161,7 @@ input[type=number]::-webkit-outer-spin-button {
 .slider__button--next {
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url(../icons/Arrow_Thin_Next.svg);
+    background-image: url(../../icons/Arrow_Thin_Next.svg);
     position: absolute;
     right: -0px;
 }
@@ -1230,8 +1233,10 @@ p.footer__link {
     transition: 0.5s;
 }
 
-.footer__link:hover svg{
-    fill: var(--primary)
+@media (any-hover: hover){ 
+    .footer__link:hover svg{
+        fill: var(--primary)
+    }
 }
 
 .footer__link:active svg{
@@ -1300,8 +1305,10 @@ p.footer__link {
     align-self: center;
 }
 
-.login__link:hover {
-    color: var(--border-orange);
+@media (any-hover: hover){
+    .login__link:hover {
+        color: var(--border-orange);
+    }
 }
 
 .login__button,
@@ -1345,8 +1352,10 @@ p.footer__link {
     height: 46px;
 }
 
-.login__button-close:hover svg path{
-    stroke: var(--grey);
+@media (any-hover: hover){
+    .login__button-close:hover svg path{
+        stroke: var(--grey);
+    }
 }
 
 .login__button-close:active svg path{
@@ -1396,8 +1405,10 @@ p.footer__link {
     transition: var(--main-transition);
 }
 
-.breadcrumbs__link:hover {
-    color: var(--primary);
+@media (any-hover: hover){ 
+    .breadcrumbs__link:hover {
+        color: var(--primary);
+    }
 }
 
 .breadcrumbs__link:active {
@@ -1514,7 +1525,7 @@ p.footer__link {
     margin-bottom: 64px;
     display: flex;
     flex-direction: column;
-    /* background-image: url(../images/SliderImg.jpg);
+    /* background-image: url(../../images/SliderImg.jpg);
     background-repeat: no-repeat; */
 }
 
@@ -1544,17 +1555,17 @@ p.footer__link {
 }
 
 .product-details__thumbnail-button--bg1 {
-    background-image: url(../images/SliderImg.jpg);
+    background-image: url(../../images/SliderImg.jpg);
 
 }
 
 .product-details__thumbnail-button--bg2 {
-    background-image: url(../images/O1CN01Hty6801YnDqWl6e7.jpg);
+    background-image: url(../../images/O1CN01Hty6801YnDqWl6e7.jpg);
     
 }
 
 .product-details__thumbnail-button--bg3 {
-    background-image: url(../images/slozhno-vybrat-cvet-ot-belogo-do-chernogo-v-gradacii.jpg);
+    background-image: url(../../images/slozhno-vybrat-cvet-ot-belogo-do-chernogo-v-gradacii.jpg);
     
 }
 
@@ -1608,9 +1619,12 @@ p.footer__link {
     /* background-color: ; */
 }
 
-.product-details__size-button:hover {
-    background-color: var(--grey);
+@media (any-hover: hover){
+    .product-details__size-button:hover {
+        background-color: var(--grey);
+    }
 }
+
 
 .product-details__size-button--selected {
     background-color: var(--dark-primary);

@@ -33,7 +33,13 @@ for (let el of productDetailsSizeButtons) {
 
 productDetailsAddToCartButton = document.getElementById("productDetailsAddToCartButton")
 productDetailsAddToCartButton.addEventListener("click", () => {
-    productDetailsAddToCartButton.classList.toggle('button--theme-orange-activated')
-    productDetailsAddToCartButton.textContent === "" 
-    productDetailsAddToCartButton.textContent = (productDetailsAddToCartButton.textContent === 'Add to cart') ? 'Added to cart' : 'Add to cart';
+    const isAdded = productDetailsAddToCartButton.classList.contains('button--theme-orange-activated');
+
+    if (isAdded) {
+        productDetailsAddToCartButton.classList.remove('button--theme-orange-activated');
+        productDetailsAddToCartButton.textContent = 'Add to cart';
+    } else {
+        productDetailsAddToCartButton.classList.add('button--theme-orange-activated');
+        productDetailsAddToCartButton.textContent = 'Added to cart';
+    }
 })

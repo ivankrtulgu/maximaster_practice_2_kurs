@@ -53,6 +53,7 @@
     background-color: var(--dark-primary);
 } 
 
+.button--theme-orange-activated,
 .button--theme-orange:active{
     color: var(--border-orange);
     background-color: var(--white);

@@ -1,0 +1,24 @@
+.stepper {
+    display: flex;
+}
+
+.stepper__count {
+    border: none;
+}
+
+.stepper__count:focus {
+    outline: none;
+}
+
+.stepper__plus,
+.stepper__minus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 12px;
+    width: 12px;
+    padding: 0;
+    background-color: var(--dark-primary);
+    color: var(--white);
+}

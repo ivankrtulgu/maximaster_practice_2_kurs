@@ -18,7 +18,7 @@
 .slider__button--prev {
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url(../../icons/Arrow_Thin_Prev.svg);
+    background-image: url(../icons/Arrow_Thin_Prev.svg);
     position: absolute;
 }
 
@@ -29,7 +29,7 @@
 .slider__button--next {
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url(../../icons/Arrow_Thin_Next.svg);
+    background-image: url(../icons/Arrow_Thin_Next.svg);
     position: absolute;
     right: -0px;
 }
@@ -44,4 +44,8 @@
 .slider__image {
     scroll-snap-align: start;
     max-width: none;
+}
+
+.slider__title {
+    margin-bottom: 60px;
 }

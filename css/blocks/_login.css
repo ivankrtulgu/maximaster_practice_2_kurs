@@ -1,0 +1,135 @@
+/* .login {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    position: fixed;
+    right: 1px;
+} */
+
+.login {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(96, 96, 96, 0.6);
+}
+
+.login__container {
+    position: relative;
+    width: 572px;
+    height: 572px;
+    box-shadow: 0 0 20px var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 55px;
+    padding-inline: 92px;
+    background-color: var(--white);
+}
+
+.login__inner {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.login__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__subrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login__link {
+    color: var(--orange);
+    align-self: center;
+}
+
+.login__link:hover {
+    color: var(--border-orange);
+}
+
+.login__button,
+.login__label, 
+.login__title {
+    text-transform: uppercase;
+}
+
+.login__label {
+    color: var(--primary);
+}
+
+.login__button {
+    margin-bottom: 14px;
+}
+
+.login__field {
+    margin-top: 14px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.login__field:focus {
+    outline: none;
+}
+
+.login__title {
+    margin-bottom: 50px;
+}
+
+.login__container--singup {
+    height: 700px;
+
+}
+
+.login__button-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 46px;
+    height: 46px;
+}
+
+.login__button-close:hover svg path{
+    stroke: var(--grey);
+}
+
+.login__button-close:active svg path{
+    stroke: var(--dark-primary);
+}
+
+.login__message-password-reset {
+    color: var(--orange);
+}
+
+.login__message-password-reset {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.login__error-message {
+    margin-top: 0;
+}
+
+.login__field-wrapper {
+    position: relative;
+}
+
+.login__field-wrapper .login__field {
+    width: 100%;
+}
+
+.login__field-wrapper button {
+    position: absolute;
+    right: 10px;
+    top: 28px;
+}

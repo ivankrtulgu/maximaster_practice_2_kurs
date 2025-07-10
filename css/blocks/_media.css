@@ -1,3 +1,9 @@
+@media (max-width: 1252px){
+    .catalog__grid {
+        gap: calc(var(--gap) - 20px); 
+    } 
+}
+
 @media (max-width: 1023px){
     .header__item--visually-hidden {
         display: block;
@@ -120,6 +126,12 @@
     .gallery__block--dark:last-of-type::before{
         transform: rotate(90deg);
     }
+
+    .catalog__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: calc(2*var(--gap) + 14px); 
+    } 
 }
 
 
@@ -155,25 +167,52 @@
         margin-bottom: 60px;
     }
 
-    .title--headline-one {
-        /* font-size: 7vw;
-        line-height: 7vw; */
-    }
+    /* .title--headline-one {
+        font-size: 7vw;
+        line-height: 7vw; 
+    } */
     
-    .subtitle--headline-one {
-        /* font-size: 2.35vw;
-        line-height: 2.35vw; */
-    }
+    /* .subtitle--headline-one {
+        font-size: 2.35vw;
+        line-height: 2.35vw; 
+    } */
 
     /* .gallery__content {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
     } */
+
+    /* .shopping-bag__tbody tr td{
+        padding-right: 10px;
+    } */
+
+    .shopping-bag__table {
+        scale: 0.9;
+    }
+
+
 }
 
 @media (max-width: 642px) {
     .sing-up-short-form__input {
         max-width: max(88.78vw, 410px);
+    }
+
+    .login__container {
+        scale: 0.9;
+    }
+
+    .catalog__grid {
+        column-gap: calc(var(--gap)); 
+    }
+
+    .shopping-bag__table {
+        scale: 0.7;
+        margin-bottom: -50px;
+    }    
+    
+    .shopping-bag__subtitle {
+        margin-bottom: -30px;
     }
 }
 
@@ -213,10 +252,55 @@
     .gallery__content > :nth-child(4).gallery__block--dark::before{
         transform: rotate(90deg);
     }
+
+    .login__container {
+        scale: 0.75;
+    }
+
+    .catalog__grid {
+        column-gap: 10px; 
+    }
+
+    .catalog__group-link {
+        margin-bottom: 26px;
+    }
+
+    .catalog__item {
+        scale: 0.8;
+    }
+
+    .shopping-bag__table {
+        scale: 0.6;
+        margin-bottom: -100px;
+    }   
+
+    .shopping-bag__subtitle {
+        margin-bottom: -100px;
+    }
 }
 
 @media (max-width: 460px){
-    .nav__list--active{
+    .nav__list{
         width: 388px;
+    }
+
+    .login__container {
+        scale: 0.7;
+    }
+
+    .product-details__image {
+        height: 224px;
+    }
+
+    .product-details__thumbnail-button {
+        width: 26px;
+    }
+
+    .shipping-address__row {
+        width: 348px;
+    }
+    
+    .payment-options__row {
+        width: 348px;
     }
 }

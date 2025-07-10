@@ -47,3 +47,28 @@
     text-align: center;
     margin: 0;
 }
+
+.title--headline-three {
+    font-family: var(--font-family);
+    color: var(--dark-primary);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+.subtitle--headline-three {
+    font-family: var(--second-family);
+    font-style: italic;
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    margin: 0;
+}

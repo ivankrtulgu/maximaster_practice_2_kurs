@@ -4,7 +4,12 @@ loginWindow = document.querySelector('.login');
 loginButtonNaveNotAccount = document.getElementById('loginButtonNaveNotAccount');
 loginButtonNaveAccount = document.getElementById('loginButtonHaveAccount');
 
-loginFieldEmail.value = localStorage['user_email'];
+if (localStorage['user_email']) {
+    loginFieldEmail.value = localStorage['user_email'];
+}
+else {
+    loginFieldEmail.value = ''
+}
 
 loginButtonForgotPassword = document.getElementById('loginButtonForgotPassword');
 loginButtonLogIn = document.getElementById('loginButtonLogIn');

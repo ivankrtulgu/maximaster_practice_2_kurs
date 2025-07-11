@@ -1,0 +1,127 @@
+.product-details {
+    margin-bottom: 64px;
+}
+
+.product-details__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 76px;
+}
+
+.product-details__gallery {
+    width: 100%;
+    background-color: var(--button-light-grey);
+    position: relative;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    /* background-image: url(../../images/SliderImg.jpg);
+    background-repeat: no-repeat; */
+}
+
+.product-details__image {
+    width: 100%;
+    height: min(600px, 47.92vw);
+    display: block;
+}
+
+.product-details__thumbnail-list {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-details__thumbnail-button {
+    padding: 0;
+    width: min(70px, 5.59vw);
+    aspect-ratio: 1;
+    background-color: var(--button-light-grey);
+    background-size: cover;
+    background-position: center;
+    /* height: min(600px, 47.92vw); */
+}
+
+.product-details__thumbnail-button--bg1 {
+    background-image: url(../../images/SliderImg.jpg);
+
+}
+
+.product-details__thumbnail-button--bg2 {
+    background-image: url(../../images/O1CN01Hty6801YnDqWl6e7.jpg);
+    
+}
+
+.product-details__thumbnail-button--bg3 {
+    background-image: url(../../images/slozhno-vybrat-cvet-ot-belogo-do-chernogo-v-gradacii.jpg);
+    
+}
+
+.product-details__title {
+    margin-bottom: 14px;
+}
+
+.product-details__article-num {
+    text-transform: uppercase;
+    color: var(--primary);
+    object-fit: cover;
+    margin: 0;
+    margin-bottom: 24px;
+
+}
+
+.product-details__price {
+    text-transform: uppercase;
+    color: var(--dark-primary);
+    margin: 0;
+    margin-bottom: 36px;
+}
+
+.product-details__description {
+    font-family: var(--font-family);
+    font-style: normal;
+    max-width: 750px;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.product-details__size-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-details__size-title {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.product-details__size-list {
+    margin-bottom: 50px;
+}
+
+.product-details__size-button {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    /* background-color: ; */
+}
+
+@media (any-hover: hover){
+    .product-details__size-button:hover {
+        background-color: var(--grey);
+    }
+}
+
+
+.product-details__size-button--selected {
+    background-color: var(--dark-primary);
+    color: var(--white);
+}
+
+
+

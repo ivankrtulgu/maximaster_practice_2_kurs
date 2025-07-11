@@ -103,8 +103,10 @@
 
 .shopping-bag__button-delete,
 .shopping-bag__button-delete svg {
-    height: 14px;
-    width: 14px;
+    /* height: 14px;
+    width: 14px; */
+    height: 36px;
+    width: 36px;
 }
 
 .shopping-bag__button-delete svg {

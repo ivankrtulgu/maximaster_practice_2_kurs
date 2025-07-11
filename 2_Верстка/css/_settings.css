@@ -22,7 +22,7 @@
 
 .page__body{
     padding-inline: var(--page-body-padding);
-    min-width: 460px; 
+    min-width: 360px; 
     font-family: var(--font-family);
 }
 
